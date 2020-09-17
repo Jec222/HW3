@@ -5,8 +5,8 @@
 
 void ReverseArray(int arr[], int length){
 
-  int start = -1;
-  int end = length; 
+  int start = 0;
+  int end = length-1; 
 
   while (start < end)
     {

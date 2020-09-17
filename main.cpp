@@ -8,7 +8,7 @@ int main() {
 	ReverseArray(arr,5);
   int n = sizeof(arr)/sizeof(arr[0]);
 
-  std::cout << n << std::endl;
+  //std::cout << n << std::endl;
 
 	for (int i = 0; i < n; i++) {
 		std::cout << arr[i] << " ";
