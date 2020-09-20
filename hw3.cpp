@@ -3,7 +3,6 @@
 *
 */
 #include <string>
-
 void ReverseArray(int arr[], int length){
 
   int start = 0;
@@ -17,6 +16,7 @@ void ReverseArray(int arr[], int length){
     end--;
     } 
 }
-bool HasBalancedParentheses(std::string input){
+
+bool HasBalancedParentheses(std::string input,int length){
   return true;
 }

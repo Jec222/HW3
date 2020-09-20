@@ -18,7 +18,7 @@ int main() {
 
 //Test HasBalancedParentheses();
  std::string statement1 = "((())())";
- if(HasBalancedParentheses(statement1)){
+ if(HasBalancedParentheses(statement1,statement1.size())){
    	std::cout << "Is it Ballanced: " << std::endl;
  }
 /*
