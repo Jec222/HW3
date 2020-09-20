@@ -12,12 +12,13 @@ int main() {
 		std::cout << arr[i] << " ";
 	}
 
-
+/*
 //Test HasBalancedParentheses();
  std::string statement1 = "((())())";
  if(HasBalancedParentheses(statement1)){
    	std::cout << "Is it Ballanced: " << std:: endl;
  }
+ */
 /*
 // Test InDogish();
  std::string mydogs = "dpoags";
