@@ -59,10 +59,9 @@ void ReverseArray(int arr[], int length){
         start++;
         end--;
     } 
-
 }
 
-bool HasBalancedParentheses(std::string input){
+/*bool HasBalancedParentheses(std::string input){
 
   char match = ')';
   int count = 0,
@@ -93,4 +92,6 @@ bool HasBalancedParentheses(std::string input){
 
     return HasBalancedParentheses(input.substr (1,treverse-1)) &&
            HasBalancedParentheses(input.substr (treverse+1,input.size()-treverse-1));
+
 }
+*/

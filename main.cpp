@@ -13,7 +13,6 @@ int main() {
 	}
 
 
-
 //Test HasBalancedParentheses();
  std::string statement1 = "((())())";
  if(HasBalancedParentheses(statement1)){
