@@ -4,7 +4,7 @@
 
 void ReverseArray(int arr[],int length);
 
-//HasBalancedParentheses();
+bool HasBalancedParentheses(std::string input);
 //InDogish();
 
 #endif
