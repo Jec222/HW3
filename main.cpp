@@ -23,7 +23,7 @@ int main() {
  }
 
 // Test InDogish();
- std::string mydogs = "gsjhdso";
+ std::string mydogs = "ogogd";
  if(InDogish(mydogs)){
    	std::cout << "Part of Dogish? " << std::endl;
  }

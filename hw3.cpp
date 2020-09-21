@@ -61,21 +61,18 @@ bool DogishHelper(std::string word, char letter){
 }
 bool InDogish(std::string input){
 
- if (input == "")
-    return false;
 
-  if(input[0] == 'd'){
-    if(input[0] == 'o'){
-      if(input[0] == 'g')
+  if(DogishHelper(input,'d')){
+    int new_location = input.find('d');
+    if(DogishHelper(input.substr(new_location),'o')){
+      new_location = input.find('o');
+      if(DogishHelper(input.substr(new_location),'g')){
         return true;
-      else
-        return InDogish(input.substr(1,input.length()));
+      }
+
     }
-    else
-      return InDogish(input.substr(1,input.length()));
   }
-  else
-    return InDogish(input.substr(1,input.length()));
+  return false;
 }
 
 bool InXish(std::string input, std::string choosen_word){
