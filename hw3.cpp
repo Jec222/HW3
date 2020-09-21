@@ -65,13 +65,7 @@ bool InDogish(std::string input){
     return false;
 
   if(input[0] == 'd'){
-    if (input == "")
-       return false;
-
     if(input[0] == 'o'){
-      if (input == "")
-        return false;
-
       if(input[0] == 'g')
         return true;
       else
