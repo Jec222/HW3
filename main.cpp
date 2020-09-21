@@ -21,14 +21,14 @@ int main() {
  if(HasBalancedParentheses(statement1)){
    	std::cout << "Is it Ballanced: " << std::endl;
  }
-/*
+
 // Test InDogish();
  std::string mydogs = "dpoags";
- If(InDogish(mydogs)){
-   	std::cout << "Part of Dogish? " << std:endl;
+ if(InDogish(mydogs)){
+   	std::cout << "Part of Dogish? " << std::endl;
  }
 
  // Test bool InXish(sting mytext, sting myword);
-*/
+
 }
 

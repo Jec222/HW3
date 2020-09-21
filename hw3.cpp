@@ -48,3 +48,26 @@ bool HasBalancedParentheses(std::string input){
     return HasBalancedParentheses(input.substr (1,treverse-1)) &&
            HasBalancedParentheses(input.substr (treverse+1,input.size()-treverse-1));
 }
+bool DogishHelper(std::string word, char letter){
+
+  if (word == "")
+    return false;
+
+  if(word[0] == letter){
+    return true;
+  }
+  else
+    return DogishHelper(word.substr(1,word.length()),letter);
+}
+bool InDogish(std::string input){
+
+   if(DogishHelper(input,'d'))
+     if(DogishHelper(input,'o'))
+       if(DogishHelper(input,'g'))
+         return true;
+
+  return false;
+}
+bool InXish(std::string input, std::string choosen_word){
+  return true;
+}
