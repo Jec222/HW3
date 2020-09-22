@@ -10,6 +10,8 @@ will store start and replace it with end
 will get the value stored and set it equal to end 
 will decrease end and increase start 
 
+// we need the length so that we can keep track of hoe many elemets we are flipping.
+
 function hasbalancedparantheses
 
 will check is the parathesis are balanced recursebly 
@@ -104,5 +106,15 @@ bool InDogish(std::string input){
 
 bool InXish(std::string input, std::string choosen_word){
 
- return true;
+  if (input == "")
+    return false;
+
+  if (DogishHelper(input,choosen_word[0]))
+    DogishHelper(input.substr(input.find(choosen_word[0])),choosen_word[1]);
+
+  if(choosen_word == "")
+    return true;
+
+  return false;
+  
 }
