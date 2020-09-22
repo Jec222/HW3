@@ -112,7 +112,7 @@ bool InXish(std::string input, std::string choosen_word){
   if (DogishHelper(input,choosen_word[0]))
     DogishHelper(input.substr(input.find(choosen_word[0])),choosen_word[1]);
 
-  if(choosen_word == "")
+  if(choosen_word == "" || choosen_word == "\n")
     return true;
 
   return false;
